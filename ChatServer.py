@@ -39,7 +39,7 @@ class UserManager:
         for conn, addr in self.users.values():
             conn.send(msg.encode())
 class TCPHandlerClass(socketserver.BaseRequestHandler):
-    #def __init__(self, server_address, RequestHandlerClass, 생략):
+    #def __init__(self, server_address, RequestHandlerClass, 생략): BaseServer클래스의 생성자함수
         #initialization
     #object create
     usermaan = UserManager()
